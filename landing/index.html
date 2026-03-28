@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planasol — Encontrá y alquilá espacios por día para eventos, cumpleaños, reuniones o un día de campo en Zona Oeste GBA. Reservá seguro con MercadoPago.">
+    <meta name="keywords" content="alquiler por día, quintas, eventos, pileta, Zona Oeste, GBA, alquiler temporario, cumpleaños, reuniones">
+    <meta name="author" content="Planasol">
+    <meta property="og:title" content="Planasol — Tu próximo plan empieza acá">
+    <meta property="og:description" content="Alquilá espacios por día para eventos, reuniones o un día de campo. Reserva segura con MercadoPago.">
+    <meta property="og:type" content="website">
+    <title>Planasol — Alquilá espacios por día | Eventos y Day Use</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════ NAV ═══════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Planasol</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#anfitriones">Anfitriones</a></li>
+                <li><a href="#busco-lugar">Busco Lugar</a></li>
+            </ul>
+            <a href="#registro" class="btn btn-primary btn-nav">Empezar</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#como-funciona">Cómo Funciona</a>
+            <a href="#anfitriones">Anfitriones</a>
+            <a href="#busco-lugar">Busco Lugar</a>
+            <a href="#registro" class="btn btn-primary" style="width: 100%; text-align: center;">Empezar</a>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <i data-lucide="map-pin" style="width:14px;height:14px"></i>
+                Zona Oeste GBA
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                Tu próximo plan<br>
+                <span class="gradient-text">empieza acá</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Encontrá quintas, salones y espacios increíbles para alquilar por día. 
+                Cumpleaños, reuniones, día de campo — todo reservado de forma segura.
+            </p>
+            <div class="hero-ctas animate-on-scroll">
+                <a href="#busco-lugar" class="btn btn-primary btn-lg">
+                    <i data-lucide="search" style="width:20px;height:20px"></i>
+                    Busco un lugar
+                </a>
+                <a href="#anfitriones" class="btn btn-outline btn-lg">
+                    <i data-lucide="home" style="width:20px;height:20px"></i>
+                    Tengo un espacio
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Pago Seguro</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <i data-lucide="star" style="width:18px;height:18px;color:var(--color-accent)"></i>
+                    <span class="stat-label">Reviews mutuos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <i data-lucide="shield-check" style="width:18px;height:18px;color:var(--color-success)"></i>
+                    <span class="stat-label">Anfitriones verificados</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i data-lucide="chevron-down" style="width:24px;height:24px"></i>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ EL PROBLEMA ═══════════════════════════════ -->
+    <section class="section section-problem" id="problema">
+        <div class="container">
+            <div class="problem-grid">
+                <div class="problem-text animate-on-scroll">
+                    <span class="section-tag">El problema</span>
+                    <h2>Buscar un lugar para tu evento<br>no debería ser <span class="text-accent">un dolor de cabeza</span></h2>
+                    <p>Hoy, buscar una quinta o un espacio para un evento en Argentina significa recorrer decenas de grupos de Facebook, hablar con desconocidos sin referencias, y arriesgarte a estafas o lugares que no son lo que muestran en las fotos.</p>
+                </div>
+                <div class="problem-cards animate-on-scroll">
+                    <div class="problem-card">
+                        <i data-lucide="search-x"></i>
+                        <h3>Búsqueda caótica</h3>
+                        <p>Grupos de Facebook, Instagram, Marketplace... sin filtros útiles ni forma de comparar.</p>
+                    </div>
+                    <div class="problem-card">
+                        <i data-lucide="shield-alert"></i>
+                        <h3>Cero garantías</h3>
+                        <p>Pagás por transferencia a un desconocido. Si algo sale mal, no tenés reclamo.</p>
+                    </div>
+                    <div class="problem-card">
+                        <i data-lucide="image-off"></i>
+                        <h3>Fotos engañosas</h3>
+                        <p>El lugar no se parece en nada a lo que mostraban. Sin reviews, no sabés qué esperar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CÓMO FUNCIONA ═══════════════════════════════ -->
+    <section class="section section-how" id="como-funciona">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Cómo funciona</span>
+                <h2>Simple. Seguro. Sin vueltas.</h2>
+                <p>Planasol conecta anfitriones con personas que buscan un espacio, con pago seguro y calificaciones reales.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>Buscá</h3>
+                    <p>Filtrá por zona, tipo de evento, capacidad y precio. Mirá fotos reales y reviews de otros usuarios.</p>
+                </div>
+                <div class="step-connector animate-on-scroll">
+                    <i data-lucide="arrow-right"></i>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i data-lucide="calendar-check"></i>
+                    </div>
+                    <h3>Reservá</h3>
+                    <p>Elegí la fecha, confirmá tu reserva y pagá seguro a través de MercadoPago. Sin transferencias raras.</p>
+                </div>
+                <div class="step-connector animate-on-scroll">
+                    <i data-lucide="arrow-right"></i>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i data-lucide="party-popper"></i>
+                    </div>
+                    <h3>Disfrutá</h3>
+                    <p>Recibí la dirección exacta al confirmar. Después del evento, calificá la experiencia para ayudar a otros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ PARA ANFITRIONES ═══════════════════════════════ -->
+    <section class="section section-hosts" id="anfitriones">
+        <div class="container">
+            <div class="host-grid">
+                <div class="host-info animate-on-scroll">
+                    <span class="section-tag tag-accent">Para anfitriones</span>
+                    <h2>¿Tenés una quinta, un salón<br>o un espacio con pileta?</h2>
+                    <p>Ganá plata alquilándolo por día. Vos ponés el precio, elegís cuándo está disponible, y nosotros te traemos personas verificadas que cuiden tu espacio.</p>
+                    <div class="host-benefits">
+                        <div class="benefit">
+                            <i data-lucide="badge-percent"></i>
+                            <div>
+                                <strong>Primeros 3 meses sin comisión</strong>
+                                <span>Arrancá gratis. Empezá a ganar desde el primer día.</span>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="users-round"></i>
+                            <div>
+                                <strong>Huéspedes calificados</strong>
+                                <span>Cada persona tiene un perfil con reviews de otros anfitriones.</span>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="wallet"></i>
+                            <div>
+                                <strong>Cobro seguro por MercadoPago</strong>
+                                <span>La plata llega a tu cuenta. Sin riesgos de impago.</span>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="calendar-range"></i>
+                            <div>
+                                <strong>Vos controlás tu calendario</strong>
+                                <span>Bloqueá las fechas que quieras. Aceptá o rechazá reservas.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="host-form-wrapper animate-on-scroll">
+                    <div class="form-card" id="form-anfitrion">
+                        <h3>Quiero ser anfitrión</h3>
+                        <p>Dejá tus datos y te contactamos para sumar tu espacio.</p>
+                        <form id="host-form" action="https://formspree.io/f/placeholder" method="POST">
+                            <div class="form-group">
+                                <label for="host-name">Nombre completo</label>
+                                <input type="text" id="host-name" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="host-email">Email</label>
+                                <input type="email" id="host-email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="host-phone">WhatsApp</label>
+                                <input type="tel" id="host-phone" name="phone" required placeholder="1155667788">
+                            </div>
+                            <div class="form-group">
+                                <label for="host-space-type">Tipo de espacio</label>
+                                <select id="host-space-type" name="space_type" required>
+                                    <option value="">Seleccioná...</option>
+                                    <option value="quinta">Quinta con pileta</option>
+                                    <option value="salon">Salón de eventos</option>
+                                    <option value="casa">Casa / Departamento</option>
+                                    <option value="galpon">Galpón / Espacio abierto</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="host-zone">Zona</label>
+                                <select id="host-zone" name="zone" required>
+                                    <option value="">Seleccioná...</option>
+                                    <option value="moreno">Moreno</option>
+                                    <option value="merlo">Merlo</option>
+                                    <option value="moron">Morón</option>
+                                    <option value="ituzaingo">Ituzaingó</option>
+                                    <option value="castelar">Castelar</option>
+                                    <option value="la-matanza">La Matanza</option>
+                                    <option value="lujan">Luján</option>
+                                    <option value="marcos-paz">Marcos Paz</option>
+                                    <option value="general-rodriguez">General Rodríguez</option>
+                                    <option value="otra">Otra zona</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="_source" value="landing_anfitrion">
+                            <button type="submit" class="btn btn-primary btn-lg btn-full">
+                                <i data-lucide="send" style="width:18px;height:18px"></i>
+                                Quiero sumar mi espacio
+                            </button>
+                        </form>
+                        <div class="form-success" id="host-form-success" style="display:none">
+                            <i data-lucide="check-circle-2" style="width:48px;height:48px;color:var(--color-success)"></i>
+                            <h3>¡Genial! Te contactamos pronto</h3>
+                            <p>Revisamos tu solicitud y te escribimos por WhatsApp para coordinar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ PARA HUÉSPEDES ═══════════════════════════════ -->
+    <section class="section section-guests" id="busco-lugar">
+        <div class="container">
+            <div class="guest-grid">
+                <div class="guest-form-wrapper animate-on-scroll">
+                    <div class="form-card form-card-dark" id="form-huesped">
+                        <h3>Busco un lugar</h3>
+                        <p>Contanos qué tipo de plan buscás y te avisamos cuando estemos listos.</p>
+                        <form id="guest-form" action="https://formspree.io/f/placeholder" method="POST">
+                            <div class="form-group">
+                                <label for="guest-email">Email</label>
+                                <input type="email" id="guest-email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-use">¿Para qué lo necesitás?</label>
+                                <select id="guest-use" name="use_type" required>
+                                    <option value="">Seleccioná...</option>
+                                    <option value="dia-de-campo">Día de campo / pileta</option>
+                                    <option value="cumpleaños">Cumpleaños</option>
+                                    <option value="reunion">Reunión familiar</option>
+                                    <option value="corporativo">Evento corporativo</option>
+                                    <option value="fotografia">Sesión de fotos / filmación</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-zone">¿En qué zona?</label>
+                                <select id="guest-zone" name="zone" required>
+                                    <option value="">Seleccioná...</option>
+                                    <option value="moreno">Moreno</option>
+                                    <option value="merlo">Merlo</option>
+                                    <option value="moron">Morón</option>
+                                    <option value="ituzaingo">Ituzaingó</option>
+                                    <option value="castelar">Castelar</option>
+                                    <option value="la-matanza">La Matanza</option>
+                                    <option value="lujan">Luján</option>
+                                    <option value="marcos-paz">Marcos Paz</option>
+                                    <option value="general-rodriguez">General Rodríguez</option>
+                                    <option value="otra">Otra zona</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-people">¿Cuántas personas aproximadamente?</label>
+                                <select id="guest-people" name="people_count">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="1-10">1 a 10</option>
+                                    <option value="10-30">10 a 30</option>
+                                    <option value="30-50">30 a 50</option>
+                                    <option value="50+">Más de 50</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="_source" value="landing_huesped">
+                            <button type="submit" class="btn btn-accent btn-lg btn-full">
+                                <i data-lucide="bell" style="width:18px;height:18px"></i>
+                                Avisame cuando esté listo
+                            </button>
+                        </form>
+                        <div class="form-success" id="guest-form-success" style="display:none">
+                            <i data-lucide="check-circle-2" style="width:48px;height:48px;color:var(--color-accent)"></i>
+                            <h3>¡Anotado!</h3>
+                            <p>Te avisamos cuando tengamos espacios disponibles en tu zona.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="guest-info animate-on-scroll">
+                    <span class="section-tag">Para vos</span>
+                    <h2>El plan perfecto<br>sin complicaciones</h2>
+                    <p>Dejá de buscar en grupos de Facebook y arriesgarte. Con Planasol encontrás espacios verificados, con reviews reales y pago seguro.</p>
+                    <div class="guest-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="filter"></i>
+                            </div>
+                            <div>
+                                <strong>Filtrá por lo que necesitás</strong>
+                                <p>Zona, tipo de evento, capacidad, precio, amenities.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="credit-card"></i>
+                            </div>
+                            <div>
+                                <strong>Pagá seguro con MercadoPago</strong>
+                                <p>Tarjeta, débito, transferencia. Con garantía de reembolso.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="message-square-text"></i>
+                            </div>
+                            <div>
+                                <strong>Reviews reales de otros usuarios</strong>
+                                <p>Sabé exactamente qué esperar antes de reservar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ TRUST / SEGURIDAD ═══════════════════════════════ -->
+    <section class="section section-trust" id="seguridad">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag tag-success">Seguridad</span>
+                <h2>Confianza en cada paso</h2>
+                <p>No es un grupo de Facebook. Es una plataforma pensada para que ambos lados estén protegidos.</p>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card animate-on-scroll">
+                    <div class="trust-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Anfitriones verificados</h3>
+                    <p>Verificamos la identidad y el espacio de cada anfitrión antes de publicarlo.</p>
+                </div>
+                <div class="trust-card animate-on-scroll">
+                    <div class="trust-icon trust-icon-accent">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3>Calificación mutua</h3>
+                    <p>Después de cada experiencia, ambos califican. Así la comunidad se regula sola.</p>
+                </div>
+                <div class="trust-card animate-on-scroll">
+                    <div class="trust-icon trust-icon-success">
+                        <i data-lucide="lock"></i>
+                    </div>
+                    <h3>Pago protegido</h3>
+                    <p>Todo pasa por MercadoPago. Si hay un problema, gestionamos el reembolso.</p>
+                </div>
+                <div class="trust-card animate-on-scroll">
+                    <div class="trust-icon trust-icon-purple">
+                        <i data-lucide="life-buoy"></i>
+                    </div>
+                    <h3>Soporte humano</h3>
+                    <p>Si algo sale mal, tenés un equipo real que te ayuda a resolverlo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CTA FINAL ═══════════════════════════════ -->
+    <section class="section section-final-cta" id="registro">
+        <div class="container">
+            <div class="final-cta-content animate-on-scroll">
+                <h2>¿Listo para planear<br>tu próximo <span class="gradient-text">planazo</span>?</h2>
+                <p>Estamos armando la mejor comunidad de espacios en Zona Oeste. Sumate ahora y sé de los primeros.</p>
+                <div class="final-cta-buttons">
+                    <a href="#anfitriones" class="btn btn-primary btn-lg">
+                        <i data-lucide="home" style="width:20px;height:20px"></i>
+                        Soy anfitrión
+                    </a>
+                    <a href="#busco-lugar" class="btn btn-accent btn-lg">
+                        <i data-lucide="search" style="width:20px;height:20px"></i>
+                        Busco un lugar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">Planasol</span>
+                </a>
+                <p>Marketplace de alquiler de espacios por día en Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Plataforma</h4>
+                    <a href="#como-funciona">Cómo funciona</a>
+                    <a href="#anfitriones">Para anfitriones</a>
+                    <a href="#busco-lugar">Busco un lugar</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <a href="mailto:hola@planasol.com.ar">hola@planasol.com.ar</a>
+                    <a href="https://instagram.com/planasol" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Planasol. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ en Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
